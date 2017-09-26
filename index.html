@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body> 
-   <div class="container">
+   <div class="container mt-5 mx-auto ">
        <!-- <div class=""> -->
+       <div class="row">
+          <div class="col text-center">
+          <div class="lead text-left">Calculator</div>
            <form name="calculator">
                  <!-- <div class="form-group"> -->
                     <div class="row">
@@ -21,35 +24,48 @@
    	        		    <input type="button" value=" 7 " class="btn btn-outline-primary" onclick="calculator.answer.value += '7' "> 
    	        			<input type="button" value=" 8 " class="btn btn-outline-primary" onclick="calculator.answer.value += '8' "> 
    	        			<input type="button" value=" 9 " class="btn btn-outline-primary" onclick="calculator.answer.value += '9' ">
-   	        			<input type="button" value=" + " class="btn btn-outline-secondary" onclick="calculator.answer.value += '+' ">
+   	        			<input type="button" value=" + " class="btn btn-outline-danger" onclick="calculator.answer.value += '+' ">
+                  <input type="button" name="" value="sin"  class="btn btn-outline-danger" onclick="calculator.answer.value = Math.sin(calculator.answer.value * Math.PI / 180) ">
    	        		</div>
    	        		<div class="row">
    	        			<input type="button" value=" 4 " class="btn btn-outline-primary" onclick="calculator.answer.value += '4' ">
    	        			<input type="button" value=" 5 " class="btn btn-outline-primary" onclick="calculator.answer.value += '5' ">
    	        			<input type="button" value=" 6 " class="btn btn-outline-primary" onclick="calculator.answer.value += '6' ">
-   	        			<input type="button" value=" - " class="btn btn-outline-secondary" onclick="calculator.answer.value += '-' ">
+   	        			<input type="button" value=" - " class="btn btn-outline-danger" onclick="calculator.answer.value += '-' ">
+                  <input type="button" name="" value="cos"  class="btn btn-outline-danger" onclick=" calculator.answer.value = Math.cos(calculator.answer.value * Math.PI / 180) ">
    	        		</div>
    	        		<div class="row">
    	        			<input type="button" value=" 1 " class="btn btn-outline-primary" onclick="calculator.answer.value += '1' ">
    	        			<input type="button" value=" 2 " class="btn btn-outline-primary" onclick="calculator.answer.value += '2' ">
    	        			<input type="button" value=" 3 " class="btn btn-outline-primary" onclick="calculator.answer.value += '3' ">
-   	        			<input type="button" value=" / " class="btn btn-outline-secondary" onclick="calculator.answer.value += '/' ">
+   	        			<input type="button" value=" / " class="btn btn-outline-danger" onclick="calculator.answer.value += '/' ">
+                  <input type="button" name="" value="tan"  class="btn btn-outline-danger" onclick="calculator.answer.value = Math.tan(calculator.answer.value * Math.PI / 180) ">
    	        		</div>
    	        		<div class="row">
    	        			<input type="button" value=" 0 " class="btn btn-outline-primary" onclick="calculator.answer.value += '0' ">
    	        			<input type="button" value=" . " class="btn btn-outline-primary" onclick="calculator.answer.value += '.' ">
-   	        			<input type="button" value=" = " class="btn btn-outline-secondary" onclick="calculator.answer.value = eval(calculator.answer.value)" >
-   	        			<input type="button" value=" * " class="btn btn-outline-secondary" onclick="calculator.answer.value += '*' ">
+   	        			<input type="button" value=" = " class="btn btn-outline-danger" onclick="calculator.answer.value = eval(calculator.answer.value)" >
+   	        			<input type="button" value=" * " class="btn btn-outline-danger" onclick="calculator.answer.value += '*' ">
+                  <input type="button" name="" value=log  class="btn btn-outline-danger" onclick="calculator.answer.value = Math.log(calculator.answer.value)">
    	        		</div>
    	        	<!-- </div> -->
+              <div class="row">
+                <input type="button" value=" &#960 " class="btn btn-outline-danger" onclick="calculator.answer.value += '3.14159265359'">
+                <input type="button" value=" % " class="btn btn-outline-danger" onclick="calculator.answer.value += '%' ">
+                <input type="button" value=" x&#94; " class="btn btn-outline-danger" onclick="calculator.answer.value = Math.exp(calculator.answer.value) ">
+                <input type="button" value=" &radic; " class="btn btn-outline-danger" onclick="calculator.answer.value = Math.sqrt(calculator.answer.value) ">
+                <input type="button" value=" x&#50; " class="btn btn-outline-danger" onclick="calculator.answer.value = eval(calculator.answer.value) * eval(calculator.answer.value) ">
+              </div>
    	        </form>
+         </div>
+      </div>
    <!-- </div> -->
    </div>
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
    <script type="text/javascript">
-   	
+   	   
    </script>
 </body>
 </html>
